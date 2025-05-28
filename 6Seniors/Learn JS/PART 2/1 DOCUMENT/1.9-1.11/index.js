@@ -93,7 +93,7 @@
 
 // 	document.body.append(scrollDiv)
 
-// 	const scrollbarDiv = scrollDiv.offsetWidth - scrollDiv.clientWidth
+const scrollbarDiv = scrollDiv.offsetWidth - scrollDiv.clientWidth
 
 // 	return scrollbarDiv
 // }
@@ -160,3 +160,10 @@ function scrollToUp(selector) {
 }
 
 scrollToUp()
+
+// === Координаты ===
+
+// Большинство соответствующих методов JavaScript работают в одной из двух указанных ниже систем координат:
+
+// Относительно окна браузера – как position:fixed, отсчёт идёт от верхнего левого угла окна.
+// Относительно документа – как position:absolute на уровне документа, отсчёт идёт от верхнего левого угла документа.
