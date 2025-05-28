@@ -38,12 +38,12 @@
 
 // К примеру, elem.onclick:
 
-// <input id="elem" type="button" value="Нажми меня!">
-// <script>
-//   elem.onclick = function() {
-//     alert('Спасибо');
-//   };
-// </script>
+<input id="elem" type="button" value="Нажми меня!">
+<script>
+  elem.onclick = function() {
+    alert('Спасибо');
+  };
+</script>
 
 // Так как у элемента DOM может быть только одно свойство с именем onclick, то назначить более одного обработчика так нельзя (только если при помощи addEventListener).
 
@@ -71,24 +71,24 @@
 
 // 1. Добавьте JavaScript к кнопке button, чтобы при нажатии элемент <div id="text"> исчезал.
 
-// {
-// 	/* <body>
-// 	<input type='button' id='hider' value='Нажмите, чтобы спрятать текст' />
+{
+	 <body>
+	<input type='button' id='hider' value='Нажмите, чтобы спрятать текст' />
 
-// 	<div id='text'>Текст</div>
+	<div id='text'>Текст</div>
 
-// 	<script>
-// 		hider.addEventListener('click', () => {(text.style.display = 'none')})
-// 	</script>
-// </body> */
-// }
+	<script>
+		hider.addEventListener('click', () => {(text.style.display = 'none')})
+	</script>
+</body> 
+}
 
 // 2. Создайте кнопку, которая будет скрывать себя по нажатию.
 
-// const button = document.createElement('button')
-// button.innerText = 'Click Me!'
-// button.id = 'btn'
-// document.body.append(button)
-// button.addEventListener('click', () => {
-// 	btn.style.visibility = 'hidden'
-// })
+const button = document.createElement('button')
+button.innerText = 'Click Me!'
+button.id = 'btn'
+document.body.append(button)
+button.addEventListener('click', () => {
+	btn.style.visibility = 'hidden'
+})
